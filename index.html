@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts Style link -->
+    <!-- <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Currency Converter</h2>
+
+      <form action="">
+        <div class="amoount">
+          <p>Enter Amount</p>
+          <input type="number" value="1" placeholder="Enter amoount" />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <p>From</p>
+            <div class="select_options">
+              <img src="https://flagsapi.com/US/shiny/64.png" alt="Flag" />
+              <select name="from" id="">
+                <!-- <option value="PAK">PAK</option>
+                <option value="USD" selected>USD</option>
+                <option value="INR">INR</option>
+                <option value="EU">EU</option>
+                <option value="AUD">AUD</option>
+                <option value="PAK">PAK</option> -->
+              </select>
+            </div>
+          </div>
+
+          <!-- Google fonts -->
+          <!-- <span class="custom-arrow material-icons">swap_horiz</span>  -->
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <div class="to">
+            <p>To</p>
+            <div class="select_options">
+              <img src="https://flagsapi.com/PK/shiny/64.png" alt="Flag" />
+              <select name="to" id="">
+                <!-- <option value="PAK">PAK</option>
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="EU">EU</option>
+                <option value="AUD">AUD</option> -->
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="msg">1 USD = 278 Rs</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="currency_script.js"></script>
+  </body>
+</html>
